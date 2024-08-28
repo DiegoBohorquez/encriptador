@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="src/css/styles.css">
+    <title>Encriptador</title>
+</head>
+<body>
+    <header class="header">
+        <img class="header__imagen" src="src/img/Logo.png" alt="Imagen Logo">
+    </header>
+    <main class="encriptador contenedor">
+        <section class="encriptador__desencriptado">
+            <form class="encriptador__form">
+                <textarea id="textarea" placeholder="Ingrese el texto aqui"></textarea>
+                <div class="encriptador__warning">
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    <p>Solo letras minúsculas y sin acentos</p>
+                </div>
+    
+                <div class="encriptador__form__botones">
+                    <input class="boton boton-encriptar" type="button" value="Encriptar" id="boton-encriptar">
+                    <input class="boton boton-desencriptar" type="button" value="Desencriptar" id="boton-desencriptar">
+                </div> 
+            </form>
+        </section>
+        <section class="encriptador__encriptado">
+            <div class="encriptador__encriptado__contenido">
+                <img class="encriptador__encriptado__imagen" src="src/img/Muñeco.png" alt="Imagen Muñeco">
+                <h2 id="tituloContenedor">Ningún mensaje fue encontrado</h2>
+                <p id="contenedorTexto">Ingresa el texto que desees encriptar o desencriptar.</p>
+                <input class="boton boton-copiar hidden" type="button" value="Copiar" id="boton-copiar"> 
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">   
+        <p class="footer__copyright">Todos los derechos reservados Diego Alejandro Bohorquez Vargas @2024</p>
+    </footer>
+      <script src="src/js/script.js"></script>
+</body>
+</html>
+
